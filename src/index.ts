@@ -38,9 +38,7 @@ app.post("/transfer", async (req: Request, res: Response) => {
     transferAmount
   })
 
-  res.send({
-    msg: payload
-  })
+  res.send(payload)
 });
 
 app.post("/transfer2", async (req: Request, res: Response) => {

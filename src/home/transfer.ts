@@ -53,6 +53,7 @@ export const Transfer = async ({
       ];
       const tx = await inscribe(script);
       console.log(`Tx: ${tx}`);
+      return tx;
     } catch (error) {
       console.error(error);
     }

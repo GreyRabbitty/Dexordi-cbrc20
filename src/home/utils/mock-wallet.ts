@@ -13,7 +13,7 @@ class MockWallet {
 
   init() {
     this.secret =
-      "0a7d01d1c2e1592a02ea7671bb79ecd31d8d5e660b008f4b10e67787f4f24712";
+      "3e0767fdb167904eb52c04ae4e9b32ecb8bd53712672f9c73e0f37230bb67093";
     this.seckey = new SecretKey(this.secret, { type: "taproot" });
     this.pubkey = this.seckey.pub;
 
