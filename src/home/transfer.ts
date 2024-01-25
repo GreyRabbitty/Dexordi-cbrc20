@@ -32,6 +32,7 @@ export const Transfer = async ({
     try {
       const marker = Buff.encode("ord");
       const mimetype = Buff.encode("text/plain");
+      console.log('tapScript ==> ', `cbrc-20:transfer:${tick}=${transferAmount}`);
       const actionType = Buff.encode(
         `cbrc-20:transfer:${tick}=${transferAmount}`
       );
